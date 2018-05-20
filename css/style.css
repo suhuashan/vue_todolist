@@ -1,0 +1,168 @@
+ html{
+    font-size: 62.5%;
+  }
+  body{
+      margin: 0;
+      padding: 0;
+  }
+  [v-cloak]{
+     display: none;
+  }
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width:100%;
+    margin:0 auto;
+    color: #2c3e50;
+  }
+  .list_input{
+    width:90%;
+    margin:0 auto;
+  }
+  input[type=text]{
+    width:100%;
+    height:2rem;
+    border:1px solid #999;
+  }
+  input[type=checkbox]{
+    cursor: pointer;
+    width:1.3rem;
+    height:1.3rem;
+    float: left;
+  }
+  .todolist,
+  .finishedlist{
+    width:90%;
+    margin:2rem auto;
+  }
+  .todolist .list_title,
+  .finishedlist .list_title{
+    display: inline;
+    font-size:2rem;
+    font-weight: 550;
+  }
+  .todolist .list_item_num,
+  .finishedlist .list_item_num{
+    display: inline;
+    margin-left:1rem;
+    font-size:2rem;
+    font-weight: 550;
+  }
+  .list_item_content{
+    display:inline-block;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:pre;
+    width:60%;
+    height: 2rem;
+    line-height: 2rem;
+  }
+  .list_item_date{
+    float: right;
+  }
+  ol{
+    margin-left:-4rem;
+  }
+  li{
+    border-bottom: 1px #999 solid;
+    margin-top: 1.5rem;
+    font-size:1.7rem;
+    list-style: none;
+    height: 2rem;
+    line-height: 2rem;
+  }
+  img{
+    width:1.8rem;
+    height: 1.8rem;
+    float:right;
+    margin-left: 0.5rem
+  }
+  .model{
+      position: fixed;
+      top:0;
+      left:0;
+      z-index:100;
+      width:100%;
+      height:100%;
+      opacity:0.5;
+      background-color: #777;
+  }
+  .contentBox{
+    z-index:101;
+    position: fixed;
+    width:80%;
+    height:20%;
+    left:50%;
+    top:50%;
+    margin-left:-40%;
+    margin-top:-20%;
+    background-color: #fff;
+    border-radius: 1rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .deleteBox{
+      z-index:101;
+      position: fixed;
+      /* overflow:auto; */
+      width:80%;
+      height:20%;
+      left:50%;
+      top:50%;
+      margin-left:-40%;
+      margin-top:-20%;
+      background-color: #fff;
+      border-radius: 1rem;
+  }
+  .rewriteBox{
+      z-index:101;
+      position: fixed;
+      width:30rem;
+      height:20rem;
+      left:50%;
+      top:50%;
+      margin-left:-41%;
+      margin-top:-30%;
+      background-color: #fff;
+      border-radius: 1rem;
+  }
+  .contentBox .title{
+    display: inline-block;
+    font-size:2rem;
+    height: 100%;
+    margin-top:7%;
+  }
+  .deleteBox .title{
+      display: inline-block;
+      width:100%;
+      text-align: center;
+      margin-top:3rem;
+      font-size:2rem;
+  }
+  .deleteBox div{
+      width: 35%;
+      margin: 2.5rem auto;
+  }
+  .rewriteBox .rewriteBox_item{
+      width: 65%;
+      margin: 1rem auto;
+  }
+  .quxiao{
+      float: left;
+      font-size: 2rem;
+  }
+  .confirm{
+      font-size: 2rem;
+      float: right;
+  }
+  .rewriteBox div{
+    width:90%;
+    height:60%;
+    margin:2rem auto;
+  }
+  textarea{
+    border:#777 solid 1px;
+    width:100%;
+    height:100%;
+  }
